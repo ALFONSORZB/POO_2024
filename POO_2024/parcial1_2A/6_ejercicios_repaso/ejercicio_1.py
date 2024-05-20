@@ -1,3 +1,4 @@
-#calcular o imprimir el precio a pagar por un articulo
-#en el precio a pagar se incluye el IVA. El programa debera funcionar N veces como el usuario desee
-
+#Crear 2 variables una pais y otra continente 
+# Mostrar su valor en pantalla
+#Poner un comentario para poner el tipo de dato
+#
