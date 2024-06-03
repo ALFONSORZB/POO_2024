@@ -1,23 +1,30 @@
-print("1.- Suma")
-print("2.- Resta")
-print("3.- Multiplicacion")
-print("4.- Division")
-print("5.- Salir")
-opcion=input("\t Elige una opcion: ").upper()
+def solicitarNumeros():
+    global n1,n2
+    n1=int(input("Numero # 1:"))
+    n2=int(input("Numero # 2:"))
 
-n1=int(input("Numero # 1:"))
-n2=int(input("Numero # 2:"))
-if opcion=="1" or opcion=="+" or opcion=="SUMA":
-        suma=n1+n2
-        print(f"{n1}+{n2}={suma}")
-elif opcion=="2" or opcion=="-" or opcion=="RESTA":
- resta=n1+n2
- print(f"{n1}+{n2}={resta}")
-elif opcion=="3" or opcion=="*" or opcion=="MULTIPLICACION":       
- multiplicacion=n1+n2
- print(f"{n1}+{n2}={multiplicacion}")
-elif opcion=="4" or opcion=="/" or opcion=="DIVISION":       
- division=n1+n2
- print(f"{n1}+{n2}={division}")
-else:
-    print("Gracias por utilizar el sistema...")
+def calculadora(n1,n2,opcion):
+    if opcion=="1" or opcion=="+" or opcion=="SUMA":
+        
+        return f"{n1}+{n2}={n1+n2}"
+    elif opcion=="2" or opcion=="-" or opcion=="RESTA":
+        
+        return f"{n1}-{n2}={n1-n2}"
+    elif opcion=="3" or opcion=="*" or opcion=="MULTIPLICACION":
+       
+        return f"{n1}*{n2}={n1*n2}"
+    elif opcion=="4" or opcion=="/" or opcion=="DIVISION":
+        
+        return f"{n1}/{n2}={n1/n2}"
+    else:
+        opcion=False
+        return "Gracias por utilizar el sistema ..."
+            
+
+opcion=True
+while opcion:
+    print("\n\t..::: CALCULADORA BÁSICA :::... \n 1.- Suma \n 2.- Resta \n 3.-Multiplicacion \n 4.- División \n 5.- SALIR ")
+    opcion=input("\t Elige una opción: ").upper()
+    if opcion!=5:
+      solicitarNumeros()
+      print(calculadora(n1,n2,opcion)
