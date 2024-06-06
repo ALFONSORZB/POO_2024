@@ -27,4 +27,5 @@ while opcion:
     opcion=input("\t Elige una opción: ").upper()
     if opcion!=5:
       solicitarNumeros()
-      print(calculadora(n1,n2,opcion)
+      print(calculadora(n1,n2,opcion))
+      
