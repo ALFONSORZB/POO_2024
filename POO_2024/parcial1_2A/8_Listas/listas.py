@@ -78,3 +78,4 @@ for a in palabras:
             insertarPeliculas()
         elif opcion=="2" or opcion=="ELIMINAR":
             eliminarPeliculas()
+            
