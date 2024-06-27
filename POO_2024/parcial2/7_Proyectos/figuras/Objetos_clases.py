@@ -1,12 +1,6 @@
 class figuras:
     def __int__(self,calcularArea):
         self.calcularAera=calcularArea
-        
-    atributo_publico="Soy un atributo publico"
-    atributo_privado="Soy un atributo privado"
-    
-    def MetodoPublico(self):
-     return self.__atributo_privado
  
     def calcularArea(self):
      pass
@@ -39,7 +33,7 @@ class rectangulo(figuras):
         def getradio(self):
             return self.radio
         
-        def setradio(Self,radio):
+        def setradio(self,radio):
             self.radio=radio
             
         def getInfo(self):
