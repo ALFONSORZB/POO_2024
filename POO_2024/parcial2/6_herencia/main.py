@@ -27,4 +27,3 @@ camioneta1.getInfo()
 print("Objeto 6")
 camioneta1=Camionetas("Blanca","Nissan","2020",180,150,6,"Trasera",False)
 camioneta1.getInfo()
-
